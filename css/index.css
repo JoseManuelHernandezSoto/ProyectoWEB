@@ -1,0 +1,184 @@
+.offer{ /* Estilo se los DIV visibles*/
+    margin-top: 2%;
+    background-color: aqua;
+    height: 200px;
+    width: 500px;
+    border-radius: 15%;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Agrega una transición suave */
+}
+
+.offer2{ /*Estilo de los DIV emergentes */
+    margin-top: 2%;
+    background-color: aquamarine;
+    height: 200px;
+    width: 500px;
+    border-radius: 15%;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Agrega una transición suave */
+}
+
+.title-package{ /*Parrafos de los titulos de las paquetes*/
+    font-size: 25px;
+}
+
+
+.text-package{ /*Paraffos de la descripcion de los paquetes*/
+    font-size: 20px;
+}
+
+.space{ /* DIV existente entre los paquetes(es solo para que esten separados)*/
+    width: 2%;
+}
+
+.image-slide{ /* Formato de las imagenes que se muestran en el slider */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.image-package{ /*Formato de las imagenes que se muestran en los paquetes*/
+    height: 70%; 
+    object-fit: contain;
+    border-radius: 10%;
+}
+
+/* Aparicion del texto de los paquetes */
+/* Viaje solo */
+#alone1:hover{
+    background-color:aquamarine;
+}
+
+#alone2{
+    position: relative; /* Posición relativa para posicionar en relación con div1 */
+    top: 0px; /* Coloca div2 debajo de div1 (la altura de div1 + el espacio deseado) */
+    display: none; /* Oculta inicialmente div2 */
+}
+
+#alone1:hover + #alone2{
+    display: block; /* Muestra div2 cuando se pasa el cursor sobre div1 */
+}
+
+/* Viaje pareja */
+#couple:hover{
+    background-color:aquamarine;
+}
+
+#couple2{
+    position: relative; /* Posición relativa para posicionar en relación con div1 */
+    top: 0px; /* Coloca div2 debajo de div1 (la altura de div1 + el espacio deseado) */
+    display: none; /* Oculta inicialmente div2 */
+}
+
+#couple:hover + #couple2{
+    display: block; /* Muestra div2 cuando se pasa el cursor sobre div1 */
+}
+/* Viaje familia */
+#family:hover{
+    background-color:aquamarine;
+}
+
+#family2{
+    position: relative; /* Posición relativa para posicionar en relación con div1 */
+    top: 0px; /* Coloca div2 debajo de div1 (la altura de div1 + el espacio deseado) */
+    display: none; /* Oculta inicialmente div2 */
+}
+
+#family:hover + #family2{
+    display: block; /* Muestra div2 cuando se pasa el cursor sobre div1 */
+}
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { /* Cuerpo de la pagina */
+    font-family: Arial, sans-serif;
+}
+
+.packages{ /* Contenedor de los parquetes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: #c9c8c8;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+}
+
+.navbar img {
+    height: 150px; /* Ajusta la altura del logotipo según sea necesario */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #777;
+}
+
+
+/* Estilos del menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 120px;
+    z-index: 2;
+}
+
+.dropdown-content li {
+    padding: 8px 15px;
+}
+
+.nav-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilo de slider */
+.swiper {
+    
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 95%;
+    height: 400px;
+    .swiper-slide{
+        background: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+    } 
+}
+  
