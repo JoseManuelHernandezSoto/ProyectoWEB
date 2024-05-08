@@ -17,6 +17,18 @@
     text-align: center;
     transition: background-color 0.3s ease; /* Agrega una transición suave */
 }
+/* Viñetas de las listas */
+.custom-bullets {
+    list-style-type: none; /* Elimina las viñetas predeterminadas */
+    padding-left: 0; /* Elimina el espacio a la izquierda de la lista */
+}
+
+.custom-bullets li:before {
+    content: "\1f836"; /* Utiliza un círculo como viñeta (puedes usar otros caracteres o iconos) */
+    color: #ff0000; /* Cambia el color de las viñetas */
+    font-size: 1.5em; /* Cambia el tamaño de las viñetas */
+    margin-right: 5px; /* Añade espacio entre la viñeta y el texto */
+}
 
 .title-package{ /*Parrafos de los titulos de las paquetes*/
     font-size: 25px;
@@ -47,6 +59,7 @@
 /* Viaje solo */
 #alone1:hover{
     background-color:aquamarine;
+    scroll-margin-bottom: 10vh; /* Desplaza el contenido hacia arriba para centrar el div */
 }
 
 #alone2{
