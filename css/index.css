@@ -4,20 +4,20 @@
 
 .offer{ /* Estilo se los DIV visibles*/
     margin-top: 2%;
-    background-color: aqua;
+    background-color: rgba(208, 104, 69, 0.573);
     height: 200px;
     width: 500px;
-    border-radius: 15%;
+    border-radius: 20px;
     text-align: center;
     transition: background-color 0.3s ease; /* Agrega una transición suave */
 }
 
 .offer2{ /*Estilo de los DIV emergentes */
     margin-top: 2%;
-    background-color: aquamarine;
+    background-color: rgb(246, 103, 42);
     height: 200px;
     width: 500px;
-    border-radius: 15%;
+    border-radius: 20px;
     text-align: center;
     transition: background-color 0.3s ease; /* Agrega una transición suave */
 }
@@ -62,7 +62,7 @@
 /* Aparicion del texto de los paquetes */
 /* Viaje solo */
 #alone1:hover{
-    background-color:aquamarine;
+    background-color: rgb(246, 103, 42);
     scroll-margin-bottom: 10vh; /* Desplaza el contenido hacia arriba para centrar el div */
 }
 
@@ -78,7 +78,7 @@
 
 /* Viaje pareja */
 #couple:hover{
-    background-color:aquamarine;
+    background-color: rgb(246, 103, 42);
 }
 
 #couple2{
@@ -92,7 +92,7 @@
 }
 /* Viaje familia */
 #family:hover{
-    background-color:aquamarine;
+    background-color: rgb(246, 103, 42);
 }
 
 #family2{

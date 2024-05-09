@@ -10,6 +10,7 @@ img{
 
 .place-container {
     display: flex; /* Utilizamos flexbox */
+    background-color: rgba(206, 232, 110, 0.265);
 }
 
 .place2 {
