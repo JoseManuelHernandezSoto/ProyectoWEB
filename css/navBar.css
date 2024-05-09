@@ -1,0 +1,62 @@
+/* Estilos de la barra de navegación */
+.navbar {
+    position: fixed;
+    background-color: #c9c8c8;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+}
+
+.navbar img {
+    height: 130px; /* Ajusta la altura del logotipo según sea necesario */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #777;
+}
+
+/* Estilos del menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 120px;
+    z-index: 2;
+}
+
+.dropdown-content li {
+    padding: 8px 15px;
+}
+
+.nav-dropdown:hover .dropdown-content {
+    display: block;
+}
