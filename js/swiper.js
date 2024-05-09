@@ -35,3 +35,9 @@ const swiper = new Swiper('.swiper', { /* Slider menu principal */
       el: '.swiper-scrollbar',
     },
   });
+
+
+    var swiperCards = new Swiper(".mySwiperCards", {
+      effect: "cards",
+      grabCursor: true,
+    });

@@ -1,0 +1,28 @@
+#container{
+    margin-top: 6%;
+}
+
+img{
+    height: 30vh;
+    margin-bottom: 1%;
+    border-radius: 5%;
+}
+
+.place-container {
+    display: flex; /* Utilizamos flexbox */
+}
+
+.place2 {
+    margin-left: 10px; /* Espacio entre los divs */
+}
+
+.title{
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic; /* Aplica el estilo de cursiva */
+}
+
+.text{
+    font-size: 25px;
+    max-width: 60%;
+}
