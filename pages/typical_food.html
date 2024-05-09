@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comida tipica</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/basic_format.css">
     <link rel="stylesheet" href="../css/navBar.css">
+    <link rel="stylesheet" href="../css/typical_food.css">
     
 </head>
 <body>
@@ -30,5 +32,90 @@
             </ul>
         </div>
     </nav>    
+
+    <div class="content">
+        <div id="left-top">
+             <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../img/Bitterballen1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../img/Bitterballen2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../img/Bitterballen3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../img/Bitterballen4.jpg" alt=""></div>
+                </div>
+            </div>
+            <p class="title">Bitterballen</p>
+            <p class="text">  
+                Deliciosas albóndigas crujientes y fritas, tradicionalmente servidas con mostaza. 
+                Estas bolitas de carne son lo último en bocadillos de pub holandeses y se pueden 
+                encontrar en los menús de la gran mayoría de bares y restaurantes de Ámsterdam.
+            </p>
+        </div>
+        <div id="right-top">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../img/Stroopwafel1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../img/Stroopwafel2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../img/Stroopwafel3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../img/Stroopwafel4.jpg" alt=""></div>
+                </div>
+            </div>
+            <p class="title">Stroopwafel</p>
+            <p class="text">  
+                Si deseas probar un dulce de la cocina típica holandesa, opta por un stroopwafel. 
+                Consiste en dos waffles delgados pegados con una capa de jarabe dulce. Estos deliciosos 
+                manjares la mar de pegajosos se disfrutan mejor calientes en un mercado callejero o en una panadería.
+            </p>
+        </div>
+ 
+        <div id="left-bot">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../img/applepay1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../img/applepay2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../img/applepay3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../img/applepay4.jpg" alt=""></div>
+                </div>
+            </div>
+            <p class="title">Tarta de manzana</p>
+            <p class="text">  
+                La versión holandesa de plato hondo se infunde con canela, salpicada de pasas y 
+                se sirve hasta que se sofoca la crema batida. Aunque la tarta de manzana encabeza 
+                el menú de postres en la mayoría de los restaurantes y cafeterías, se dice que Winkel 43 
+                en el vecindario de Jordaan sirve uno de los mejores.
+            </p>
+        </div>
+
+        <div id="right-bot">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../img/Kibbeling1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../img/Kibbeling2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../img/Kibbeling3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../img/Kibbeling4.jpg" alt=""></div>
+                </div>
+            </div>
+            <p class="title">Kibbeling</p>
+            <p class="text">  
+                Si no te sientes lo suficientemente valiente como para probar el arenque crudo, 
+                entonces aún puedes obtener tu dosis de pescado de kibbeling. Una comida típica de 
+                Ámsterdam que consiste en bocados de pescado blanco rebozados y fritos.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+        });
+    </script>
 </body>
 </html>
