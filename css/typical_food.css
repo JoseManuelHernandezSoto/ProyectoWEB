@@ -71,6 +71,7 @@ body {
 
 #right-top, #left-top, #right-bot, #left-bot {
     flex: 1;
+    border-radius: 15px;
 }
 
 #right-top {
