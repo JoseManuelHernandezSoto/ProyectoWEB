@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/video.css">
+    <link rel="stylesheet" href="../css/navBar.css">
+  
+</head>
+
+<body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#"><img src="../img/logo.png"></a>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-button">Inicio</a></li>
+                <li><a href="./about_amsterdam.html" class="nav-button">Acerca de</a></li>
+                <li><a href="./tourist_places.html" class="nav-button">Lugares turisticos</a></li>
+                <li><a href="./typical_food.html" class="nav-button">Comida tipica</a></li>
+                <li><a href="./contact_number.html" class="nav-button">Contacto del creador</a></li>
+                <li><a href="./form.html" class="nav-button">Formulario de registro</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-button">Extras</a>
+                    <ul class="dropdown-content">
+                        <li><a href="./videos.html">Videos</a></li>
+                        <li><a href="#">Admin</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <video  controls>
+                        <source src="../videos/video1.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <video  controls>
+                        <source src="../videos/video2.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <video  controls>
+                        <source src="../videos/video3.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <video  controls>
+                        <source src="../videos/video4.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+          // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    });
+  </script>
+</body>
+
+</html>

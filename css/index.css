@@ -14,7 +14,7 @@
 
 .offer2{ /*Estilo de los DIV emergentes */
     margin-top: 2%;
-    background-color: rgb(246, 103, 42);
+    background-color: rgba(208, 104, 69, 0.573);
     height: 200px;
     width: 500px;
     border-radius: 20px;
@@ -61,9 +61,9 @@
 
 /* Aparicion del texto de los paquetes */
 /* Viaje solo */
-#alone1:hover{
+.hovered {
     background-color: rgb(246, 103, 42);
-    scroll-margin-bottom: 10vh; /* Desplaza el contenido hacia arriba para centrar el div */
+    cursor: pointer;
 }
 
 #alone2{
@@ -72,37 +72,20 @@
     display: none; /* Oculta inicialmente div2 */
 }
 
-#alone1:hover + #alone2{
-    display: block; /* Muestra div2 cuando se pasa el cursor sobre div1 */
-}
 
 /* Viaje pareja */
-#couple:hover{
-    background-color: rgb(246, 103, 42);
-}
-
 #couple2{
     position: relative; /* Posición relativa para posicionar en relación con div1 */
     top: 0px; /* Coloca div2 debajo de div1 (la altura de div1 + el espacio deseado) */
     display: none; /* Oculta inicialmente div2 */
 }
 
-#couple:hover + #couple2{
-    display: block; /* Muestra div2 cuando se pasa el cursor sobre div1 */
-}
-/* Viaje familia */
-#family:hover{
-    background-color: rgb(246, 103, 42);
-}
 
+/* Viaje familia */
 #family2{
     position: relative; /* Posición relativa para posicionar en relación con div1 */
     top: 0px; /* Coloca div2 debajo de div1 (la altura de div1 + el espacio deseado) */
     display: none; /* Oculta inicialmente div2 */
-}
-
-#family:hover + #family2{
-    display: block; /* Muestra div2 cuando se pasa el cursor sobre div1 */
 }
 
 .packages{ /* Contenedor de los parquetes */
