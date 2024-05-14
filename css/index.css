@@ -51,8 +51,8 @@
 }
 
 section {
-    background: #ffffff00;
-    color: #334dce;
+    background: #ffffff;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center; /* Para centrar verticalmente */
