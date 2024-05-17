@@ -1,0 +1,173 @@
+#content {
+    margin-top: 5.5%; /* Agrega un margen superior del 5.5% al contenido */
+}
+
+html {
+    height: 100%; /* Establece la altura del elemento html al 100% de la ventana */
+}
+
+body {
+    margin: 0; /* Elimina los márgenes por defecto del cuerpo */
+    padding: 0; /* Elimina el relleno por defecto del cuerpo */
+    font-family: sans-serif; /* Establece la familia de fuentes a sans-serif */
+    background: linear-gradient(#ffffff8b, #000000); /* Aplica un degradado de fondo desde un blanco semi-transparente a negro */
+}
+
+.login-box {
+    position: absolute; /* Posiciona la caja de login de forma absoluta */
+    top: 50%; /* Centra verticalmente la caja de login */
+    left: 50%; /* Centra horizontalmente la caja de login */
+    width: 400px; /* Establece el ancho de la caja de login a 400px */
+    padding: 40px; /* Agrega un relleno de 40px alrededor del contenido de la caja */
+    transform: translate(-50%, -50%); /* Ajusta la posición para centrar la caja */
+    background: rgba(0, 0, 0, 0.5); /* Establece un fondo negro semi-transparente */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total de los elementos */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6); /* Agrega una sombra a la caja */
+    border-radius: 10px; /* Redondea las esquinas de la caja */
+}
+
+.login-box h2 {
+    margin: 0 0 30px; /* Elimina el margen superior y agrega un margen inferior de 30px */
+    padding: 0; /* Elimina el relleno */
+    color: #fff; /* Establece el color del texto a blanco */
+    text-align: center; /* Centra el texto */
+}
+
+.login-box .user-box {
+    position: relative; /* Establece una posición relativa para los elementos de la caja del usuario */
+}
+
+.login-box .user-box input {
+    width: 100%; /* Establece el ancho del input al 100% del contenedor */
+    padding: 10px 0; /* Agrega un relleno superior e inferior de 10px */
+    font-size: 16px; /* Establece el tamaño de fuente a 16px */
+    color: #fff; /* Establece el color del texto a blanco */
+    margin-bottom: 30px; /* Agrega un margen inferior de 30px */
+    border: none; /* Elimina los bordes */
+    border-bottom: 1px solid #fff; /* Agrega un borde inferior blanco */
+    outline: none; /* Elimina el contorno */
+    background: transparent; /* Hace el fondo del input transparente */
+}
+
+.login-box .user-box label {
+    position: absolute; /* Posiciona el label de forma absoluta */
+    top: 0; /* Coloca el label en la parte superior */
+    left: 0; /* Coloca el label en la parte izquierda */
+    padding: 10px 0; /* Agrega un relleno superior e inferior de 10px */
+    font-size: 16px; /* Establece el tamaño de fuente a 16px */
+    color: #000000; /* Establece el color del texto a blanco */
+    pointer-events: none; /* Desactiva los eventos de puntero para el label */
+    transition: .5s; /* Agrega una transición de 0.5 segundos */
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px; /* Mueve el label hacia arriba */
+    left: 0; /* Mantiene el label alineado a la izquierda */
+    color: #ffffff; /* Cambia el color del texto */
+    font-size: 12px; /* Reduce el tamaño de fuente a 12px */
+}
+
+.login-box form a {
+    position: relative; /* Establece una posición relativa para el enlace */
+    display: inline-block; /* Muestra el enlace como un bloque en línea */
+    padding: 10px 20px; /* Agrega un relleno de 10px vertical y 20px horizontal */
+    color: #ffffff; /* Establece el color del texto a rojo */
+    font-size: 16px; /* Establece el tamaño de fuente a 16px */
+    text-decoration: none; /* Elimina la decoración del texto */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    overflow: hidden; /* Oculta el contenido desbordado */
+    transition: .5s; /* Agrega una transición de 0.5 segundos */
+    margin-top: 40px; /* Agrega un margen superior de 40px */
+    letter-spacing: 4px; /* Establece el espaciado entre letras a 4px */
+}
+
+.login-box a:hover {
+    background: #ffffff; /* Cambia el fondo a rojo al pasar el cursor */
+    color: #000000; /* Cambia el color del texto a blanco al pasar el cursor */
+    border-radius: 5px; /* Redondea las esquinas */
+    box-shadow: 0 0 5px #ffffff, /* Agrega una sombra al texto */
+                0 0 25px #ffffff,
+                0 0 50px #ffffff,
+                0 0 100px #ffffff;
+}
+
+.login-box a span {
+    position: absolute; /* Posiciona los spans de forma absoluta */
+    display: block; /* Muestra los spans como bloques */
+}
+
+.login-box a span:nth-child(1) {
+    top: 0; /* Coloca el span en la parte superior */
+    left: -100%; /* Inicialmente, coloca el span fuera de la vista a la izquierda */
+    width: 100%; /* Establece el ancho al 100% */
+    height: 2px; /* Establece la altura a 2px */
+    background: linear-gradient(90deg, transparent, #ffffff); /* Aplica un degradado desde transparente a rojo */
+    animation: btn-anim1 1s linear infinite; /* Aplica una animación continua */
+}
+
+@keyframes btn-anim1 {
+    0% {
+      left: -100%; /* Empieza la animación fuera de la vista a la izquierda */
+    }
+    50%, 100% {
+      left: 100%; /* Termina la animación fuera de la vista a la derecha */
+    }
+}
+
+.login-box a span:nth-child(2) {
+    top: -100%; /* Inicialmente, coloca el span fuera de la vista arriba */
+    right: 0; /* Alinea el span a la derecha */
+    width: 2px; /* Establece la anchura a 2px */
+    height: 100%; /* Establece la altura al 100% */
+    background: linear-gradient(180deg, transparent, #ffffff); /* Aplica un degradado desde transparente a rojo */
+    animation: btn-anim2 1s linear infinite; /* Aplica una animación continua */
+    animation-delay: .25s; /* Retrasa la animación 0.25 segundos */
+}
+
+@keyframes btn-anim2 {
+    0% {
+      top: -100%; /* Empieza la animación fuera de la vista arriba */
+    }
+    50%, 100% {
+      top: 100%; /* Termina la animación fuera de la vista abajo */
+    }
+}
+
+.login-box a span:nth-child(3) {
+    bottom: 0; /* Coloca el span en la parte inferior */
+    right: -100%; /* Inicialmente, coloca el span fuera de la vista a la derecha */
+    width: 100%; /* Establece el ancho al 100% */
+    height: 2px; /* Establece la altura a 2px */
+    background: linear-gradient(270deg, transparent, #ffffff); /* Aplica un degradado desde transparente a rojo */
+    animation: btn-anim3 1s linear infinite; /* Aplica una animación continua */
+    animation-delay: .5s; /* Retrasa la animación 0.5 segundos */
+}
+
+@keyframes btn-anim3 {
+    0% {
+      right: -100%; /* Empieza la animación fuera de la vista a la derecha */
+    }
+    50%, 100% {
+      right: 100%; /* Termina la animación fuera de la vista a la izquierda */
+    }
+}
+
+.login-box a span:nth-child(4) {
+    bottom: -100%; /* Inicialmente, coloca el span fuera de la vista abajo */
+    left: 0; /* Alinea el span a la izquierda */
+    width: 2px; /* Establece la anchura a 2px */
+    height: 100%; /* Establece la altura al 100% */
+    background: linear-gradient(360deg, transparent, #ffffff); /* Aplica un degradado desde transparente a rojo */
+    animation: btn-anim4 1s linear infinite; /* Aplica una animación continua */
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+    0% {
+      bottom: -100%; /* Empieza la animación fuera de la vista a la derecha */
+    }
+    50%,100% {
+      bottom: 100%; /* Termina la animación fuera de la vista a la izquierda */
+    }
+}

@@ -1,11 +1,11 @@
 /* Reset de estilos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    box-sizing: border-box; /* Utiliza el modelo de caja de borde */
 }
 
-body { /* Cuerpo de la pagina */
-    font-family: Arial, sans-serif;
-   /* background-color: gray;  Fondo para todas las paginas*/
+body { /* Cuerpo de la página */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    /* background-color: gray; */ /* Color de fondo para todas las páginas (comentado para desactivar) */
 }

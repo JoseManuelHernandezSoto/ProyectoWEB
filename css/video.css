@@ -1,41 +1,31 @@
-.content{
-  margin-top: 6%;
+/* Ajusta el margen superior del contenido principal */
+.content {
+  margin-top: 6%; /* Añade un margen superior del 6% para separar el contenido de la parte superior de la página */
 }
 
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
+/* Estilos del contenedor del Swiper */
 .swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  width: 100%; /* El Swiper ocupa el 100% del ancho disponible */
+  padding-top: 50px; /* Añade un padding superior de 50px para separar las diapositivas del borde superior del Swiper */
+  padding-bottom: 50px; /* Añade un padding inferior de 50px para separar las diapositivas del borde inferior del Swiper */
 }
 
+/* Estilos para cada diapositiva del Swiper */
 .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
+  background-position: center; /* Posiciona el fondo de la diapositiva en el centro */
+  background-size: cover; /* Escala la imagen de fondo para cubrir toda la diapositiva */
+  width: 300px; /* Fija el ancho de cada diapositiva a 300px */
+  height: 300px; /* Fija la altura de cada diapositiva a 300px */
 }
 
+/* Asegura que las imágenes dentro de las diapositivas se ajusten adecuadamente */
 .swiper-slide img {
-  display: block;
-  width: 100%;
+  display: block; /* Muestra la imagen como un bloque */
+  width: 100%; /* La imagen ocupa el 100% del ancho de la diapositiva */
 }
 
-video{
-  height: 100%;
-  width: 100%;
+/* Estilos para los videos */
+video {
+  height: 100%; /* El video ocupa el 100% de la altura del contenedor */
+  width: 100%; /* El video ocupa el 100% del ancho del contenedor */
 }

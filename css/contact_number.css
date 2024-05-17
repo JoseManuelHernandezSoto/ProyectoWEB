@@ -1,28 +1,26 @@
-.content-info{
-    margin-top: 6%;
-    height: 88vh;
-    text-align: center;
-    align-items: center;
+.content-info {
+    margin-top: 6%; /* Establece un margen superior del 6% con respecto al contenedor padre */
+    height: 88vh; /* Establece la altura del elemento al 88% del viewport height */
+    text-align: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra los elementos hijos verticalmente (aplicable si es un contenedor flex) */
 }
 
-.imag{
-    height: 40%;    
-    border-radius: 20px;
+.imag {
+    height: 40%; /* Establece la altura del elemento al 40% de su contenedor padre */
+    border-radius: 20px; /* Aplica un borde redondeado de 20px */
 }
 
-.title{
-    font-size: 60px;
-    font-weight: bolder;
-    font-style: italic;
+.title {
+    font-size: 60px; /* Tamaño de fuente de 60px */
+    font-weight: bolder; /* Establece el peso de la fuente a 'bolder' (más negrita que 'bold') */
+    font-style: italic; /* Establece el estilo de la fuente a cursiva */
 }
 
-.text{
-    font-size: 30px;
+.text {
+    font-size: 30px; /* Tamaño de fuente de 30px */
 }
 
-.phone{
-    font-size: 18px;
-    font-style: oblique;
+.phone {
+    font-size: 18px; /* Tamaño de fuente de 18px */
+    font-style: oblique; /* Establece el estilo de la fuente a oblicuo */
 }
-
-

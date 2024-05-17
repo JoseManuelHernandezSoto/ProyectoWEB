@@ -1,59 +1,71 @@
-.form{
-    margin-top: 6%;
-    height: 88vh;
-    text-align: center;
-    align-items: center;
+/* Estilos generales para el formulario */
+.form {
+  margin-top: 6%; /* Margen superior del 6% */
+  height: 88vh; /* Altura del 88% del viewport */
+  text-align: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
 }
 
-.imag{
-    height: 40%;    
-    border-radius: 20px;
+/* Estilos para la imagen */
+.imag {
+  height: 40%; /* Altura del 40% del contenedor */
+  border-radius: 20px; /* Añade bordes redondeados */
 }
 
-.title{
-    font-size: 60px;
-    font-weight: bolder;
-    font-style: italic;
+/* Estilos para el título */
+.title {
+  font-size: 60px; /* Tamaño de fuente de 60px */
+  font-weight: bolder; /* Establece el grosor de la fuente en negrita */
+  font-style: italic; /* Establece el estilo de fuente en cursiva */
 }
 
-.text{
-    font-size: 30px;
+/* Estilos para el texto */
+.text {
+  font-size: 30px; /* Tamaño de fuente de 30px */
 }
 
-.tabla{
-    text-align: center;
+/* Estilos para la tabla */
+.tabla {
+  text-align: center; /* Centra el contenido de la tabla horizontalmente */
 }
 
+/* Estilos para el encabezado */
+header {
+  background-color: gray; /* Color de fondo gris */
+  color: #fff; /* Color de texto blanco */
+  padding: 20px; /* Espaciado interno de 20px */
+  text-align: center; /* Centra el texto horizontalmente */
+}
 
-  header {
-    background-color: gray;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
+/* Estilos para el título secundario */
+h2 {
+  font-size: 24px; /* Tamaño de fuente de 24px */
+}
 
-  h2 {
-    font-size: 24px;
-  }
-  form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  table{
-    border: solid;
-  }
+/* Estilos para el formulario */
+form {
+  display: flex; /* Utiliza flexbox para organizar los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay suficiente espacio */
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
 
-  td{
-    padding: 15px;
-    border: solid;
-  }
-  
-  input, select{
-    width: 100%;
-  }
-  
-  input{
-    text-transform: uppercase;
-  }
+/* Estilos para la tabla */
+table {
+  border: solid; /* Borde sólido */
+}
+
+/* Estilos para las celdas de la tabla */
+td {
+  padding: 15px; /* Espaciado interno de 15px */
+  border: solid; /* Borde sólido */
+}
+
+/* Estilos para los campos de entrada y selección */
+input, select {
+  width: 100%; /* Ancho del 100% del contenedor */
+}
+
+/* Estilos específicos para los campos de entrada */
+input {
+  text-transform: uppercase; /* Transforma el texto a mayúsculas */
+}

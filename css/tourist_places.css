@@ -1,29 +1,100 @@
-#container{
-    margin-top: 6%;
-}
-
-img{
-    height: 30vh;
-    margin-bottom: 1%;
-    border-radius: 5%;
-}
-
-.place-container {
-    display: flex; /* Utilizamos flexbox */
-    background-color: rgba(206, 232, 110, 0.265);
-}
-
-.place2 {
-    margin-left: 10px; /* Espacio entre los divs */
-}
-
-.title{
-    font-size: 60px;
-    font-style: italic; /* Aplica el estilo de cursiva */
-    font-weight: bold;
-}
-
-.text{
-    font-size: 25px;
-    max-width: 60%;
-}
+/* Estilo para los párrafos */
+p {
+    margin-top: 15%; /* Añade un margen superior del 15% */
+    max-width: 70%; /* Establece un ancho máximo del 70% */
+    font-size: 23px; /* Establece el tamaño de fuente a 23px */
+  }
+  
+  /* Contenedor del slider */
+  .slider-container {
+    position: relative; /* Posiciona el contenedor de manera relativa para posicionar elementos hijos de forma absoluta */
+    overflow: hidden; /* Oculta el contenido que desborda el contenedor */
+    width: 100vw; /* El contenedor ocupa el 100% del ancho de la ventana */
+    height: 100vh; /* El contenedor ocupa el 100% de la altura de la ventana */
+  }
+  
+  /* Sección izquierda del slider */
+  .left-slide {
+    height: 100%; /* La sección ocupa el 100% de la altura del contenedor */
+    width: 35%; /* La sección ocupa el 35% del ancho del contenedor */
+    position: absolute; /* Posiciona la sección de manera absoluta */
+    top: 0; /* Alinea la sección al borde superior del contenedor */
+    left: 0; /* Alinea la sección al borde izquierdo del contenedor */
+    transition: transform 0.5s ease-in-out; /* Añade una transición suave para las transformaciones */
+  }
+  
+  .left-slide > div {
+    height: 100%; /* El div interno ocupa el 100% de la altura de la sección */
+    width: 100%; /* El div interno ocupa el 100% del ancho de la sección */
+    display: flex; /* Usa flexbox para alinear el contenido */
+    flex-direction: column; /* Alinea el contenido en una columna */
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    color: #fff; /* Establece el color del texto a blanco */
+  }
+  
+  .left-slide h1 {
+    text-align: center; /* Centra el texto */
+    font-size: 40px; /* Establece el tamaño de fuente a 40px */
+    max-width: 90%; /* Establece un ancho máximo del 90% */
+    margin-bottom: 10px; /* Añade un margen inferior de 10px */
+    margin-top: -30px; /* Añade un margen superior negativo de 30px para ajustar la posición */
+    font-style: italic; /* Aplica estilo de fuente en cursiva */
+  }
+  
+  /* Sección derecha del slider */
+  .right-slide {
+    height: 100%; /* La sección ocupa el 100% de la altura del contenedor */
+    position: absolute; /* Posiciona la sección de manera absoluta */
+    top: 0; /* Alinea la sección al borde superior del contenedor */
+    left: 35%; /* Alinea la sección al borde izquierdo del contenedor con un margen de 35% */
+    width: 65%; /* La sección ocupa el 65% del ancho del contenedor */
+    transition: transform 0.5s ease-in-out; /* Añade una transición suave para las transformaciones */
+  }
+  
+  .right-slide > div {
+    background-repeat: no-repeat; /* Evita la repetición del fondo */
+    background-size: cover; /* Escala la imagen de fondo para cubrir todo el div */
+    background-position: center center; /* Posiciona el fondo en el centro */
+    height: 100%; /* El div interno ocupa el 100% de la altura de la sección */
+    width: 100%; /* El div interno ocupa el 100% del ancho de la sección */
+  }
+  
+  /* Estilos para los botones */
+  button {
+    background-color: #fff; /* Establece el color de fondo a blanco */
+    border: none; /* Elimina el borde del botón */
+    color: #aaa; /* Establece el color del texto a gris claro */
+    cursor: pointer; /* Cambia el cursor a pointer al pasar sobre el botón */
+    font-size: 16px; /* Establece el tamaño de fuente a 16px */
+    padding: 15px; /* Añade padding de 15px */
+  }
+  
+  button:hover {
+    color: #222; /* Cambia el color del texto a gris oscuro al pasar sobre el botón */
+  }
+  
+  button:focus {
+    outline: none; /* Elimina el contorno del botón al enfocarse */
+  }
+  
+  /* Posiciona los botones de acción en el slider */
+  .slider-container .action-buttons button {
+    position: absolute; /* Posiciona los botones de manera absoluta */
+    left: 35%; /* Alinea los botones con un margen izquierdo de 35% */
+    top: 50%; /* Alinea los botones al 50% de la altura del contenedor */
+    z-index: 100; /* Asegura que los botones estén por encima de otros elementos */
+  }
+  
+  .slider-container .action-buttons .down-button {
+    transform: translateX(-100%); /* Mueve el botón hacia la izquierda fuera del contenedor */
+    border-top-left-radius: 5px; /* Añade un borde superior izquierdo redondeado de 5px */
+    border-bottom-left-radius: 5px; /* Añade un borde inferior izquierdo redondeado de 5px */
+  }
+  
+  .slider-container .action-buttons .up-button {
+    transform: translateY(-100%); /* Mueve el botón hacia arriba fuera del contenedor */
+    border-top-right-radius: 5px; /* Añade un borde superior derecho redondeado de 5px */
+    border-bottom-right-radius: 5px; /* Añade un borde inferior derecho redondeado de 5px */
+  }
+  

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de registro</title>
+    <link rel="icon" type="image/jpg" href="../img/favicon.jpg">
     <link rel="stylesheet" href="../css/basic_format.css">
     <link rel="stylesheet" href="../css/navBar.css">
     <link rel="stylesheet" href="../css/form.css">
@@ -24,7 +25,7 @@
                     <a href="#" class="nav-button">Extras</a>
                     <ul class="dropdown-content">
                         <li><a href="./videos.html">Videos</a></li>
-                        <li><a href="#">Admin</a></li>
+                        <li><a href="./login.html">Admin</a></li>
                     </ul>
                 </li>
             </ul>

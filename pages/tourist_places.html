@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lugares turisticos</title>
+    <title>Lugares Turisticos</title>
+    <link rel="icon" type="image/jpg" href="../img/favicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="../css/basic_format.css">
     <link rel="stylesheet" href="../css/navBar.css">
     <link rel="stylesheet" href="../css/tourist_places.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../node_modules/atropos/atropos.min.css">
-
 </head>
 <body>
     <!-- Barra de navegacion -->
@@ -19,296 +18,122 @@
             <ul class="nav-links">
                 <li><a href="../index.html" class="nav-button">Inicio</a></li>
                 <li><a href="./about_amsterdam.html" class="nav-button">Acerca de</a></li>
-                <li><a href="" class="nav-button">Lugares turisticos</a></li>
+                <li><a href="./tourist_places.html" class="nav-button">Lugares turisticos</a></li>
                 <li><a href="./typical_food.html" class="nav-button">Comida tipica</a></li>
                 <li><a href="./contact_number.html" class="nav-button">Contacto del creador</a></li>
                 <li><a href="./form.php" class="nav-button">Formulario de registro</a></li>
                 <li class="nav-dropdown">
                     <a href="#" class="nav-button">Extras</a>
                     <ul class="dropdown-content">
-                      <li><a href="./videos.html">Videos</a></li>
-                        <li><a href="#">Admin</a></li>
+                        <li><a href="./videos.html">Videos</a></li>
+                        <li><a href="./login.html">Admin</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
-    </nav>    
+    </nav>
 
-    <div id="container">
-            <!-- main Atropos container (required), add your custom class here -->
-            <div class="atropos placeOne">
-                <!-- scale container (required) -->
-                <div class="atropos-scale">
-                  <!-- rotate container (required) -->
-                    <div class="atropos-rotate">
-                        <!-- inner container (required) -->
-                        <div class="atropos-inner">
-                            <!-- put your custom content here -->
-                            <div class="place-container">
-                                <div class="place" >
-                                    <div class="place"><img src="../img/lugar1.jpg" alt=""></div>
-                                </div>
-                                <!-- DIV emergente -->
-                                <div class="place2" >
-                                    <P class="title">Museo Van Gogh</P>
-                                    <P class="text">
-                                        Alberga la mayor colección de obras de Vincent van Gogh en el mundo, incluyendo 
-                                        muchas de sus famosas pinturas como "Los girasoles" y "La habitación de Arlés". 
-                                    </P>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div id="content">
+        <div class="slider-container">
+            <div class="left-slide">
+                <div style="background-color: #70466f">
+                    <h1>Museo Van Gogh</h1>
+                    <p>
+                        Alberga la mayor colección de obras de Vincent van Gogh en el mundo, incluyendo 
+                        muchas de sus famosas pinturas como "Los girasoles" y "La habitación de Arlés". 
+                    </p>
+
+
+                </div>
+                <div style="background-color: #41613d">
+                    <h1>Museo Rijksmuseum</h1>
+                    <p>
+                        Uno de los museos más importantes de Ámsterdam, donde se exhiben obras 
+                        maestras de artistas holandeses como Rembrandt, Vermeer y Frans Hals.
+                    </p>
+                </div>
+                <div style="background-color: #657e85">
+                    <h1>Casa de Ana Frank</h1>
+                    <p>
+                        El lugar donde Ana Frank y su familia se escondieron de los nazis durante la Segunda 
+                        Guerra Mundial. Ahora es un museo que presenta la historia del Holocausto y la vida de
+                        Ana Frank.
+                    </p>
+                </div>
+                <div style="background-color: #753e3d">
+                    <h1>Barrio Rojo</h1>
+                    <p>
+                        Conocido por sus famosas vitrinas donde las trabajadoras sexuales realizan su 
+                        trabajo, así como por sus cafés, bares y restaurantes.             
+                    </p>
+                </div>
+                <div style="background-color: #6e7143">
+                    <h1>Canal Ring (Anillo de Canales)</h1>
+                    <p>
+                        Un Patrimonio de la Humanidad de la UNESCO, el Anillo de Canales de 
+                        Ámsterdam es famoso por sus pintorescos canales, puentes históricos y hermosas 
+                        casas del siglo XVII.
+                    </p>
+                </div>
+                <div style="background-color: #7f9853">
+                    <h1>Plaza Dam</h1>
+                    <p>
+                        El corazón de Ámsterdam, donde puedes encontrar el Palacio 
+                        Real, el Monumento Nacional y la Iglesia Nueva.
+                    </p>
+                </div>
+                <div style="background-color: #588972">
+                    <h1>Museo de Ámsterdam (Amsterdam Museum)</h1>
+                    <p>
+                        Un museo dedicado a la historia y la cultura de 
+                        Ámsterdam, desde sus orígenes hasta el presente.
+                    </p>
+                </div>
+                <div style="background-color: #425e63">
+                    <h1>Parque Vondelpark</h1>
+                    <p>
+                        Un hermoso parque urbano donde puedes relajarte, hacer un 
+                        picnic, andar en bicicleta o simplemente pasear.
+                    </p>
+                </div>
+                <div style="background-color: #3a4b61">
+                    <h1>Casa de Rembrandt (Rembrandthuis)</h1>
+                    <p>
+                        La casa donde vivió y trabajó el famoso pintor holandés Rembrandt van 
+                        Rijn. Ahora es un museo que presenta su vida y obra.
+                    </p>
+                </div>
+                <div style="background-color: #2b2e32">
+                    <h1>Mercado de las Flores (Bloemenmarkt)</h1>
+                    <p>
+                        El único mercado de flores flotante del mundo, donde puedes encontrar una gran 
+                        variedad de flores, plantas y bulbos de flores holandesas.
+                    </p>
                 </div>
             </div>
-
-            <!-- main Atropos container (required), add your custom class here -->
-            <div class="atropos placeTwo">
-                <!-- scale container (required) -->
-                <div class="atropos-scale">
-                  <!-- rotate container (required) -->
-                    <div class="atropos-rotate">
-                        <!-- inner container (required) -->
-                        <div class="atropos-inner">
-                            <!-- put your custom content here -->
-                            <div class="place-container">
-                                <div class="place" >
-                                    <div class="place"><img src="../img/lugar2.jpeg" alt=""></div>
-                                </div>
-                                <!-- DIV emergente -->
-                                <div class="place2" >
-                                    <P class="title">Museo Rijksmuseum</P>
-                                    <P class="text">
-                                        Uno de los museos más importantes de Ámsterdam, donde se exhiben obras 
-                                        maestras de artistas holandeses como Rembrandt, Vermeer y Frans Hals.
-                                    </P>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="right-slide">
+                <div style="background-image: url(../img/lugar10.jpg);"></div>
+                <div style="background-image: url(../img/lugar9.jpeg);"></div>
+                <div style="background-image: url(../img/lugar8.jpg);"></div>
+                <div style="background-image: url(../img/lugar7.jpg);"></div>
+                <div style="background-image: url(../img/lugar6.jpg);"></div>
+                <div style="background-image: url(../img/lugar5.jpeg);"></div>
+                <div style="background-image: url(../img/lugar4.jpg);"></div>
+                <div style="background-image: url(../img/lugar3.jpeg);"></div>
+                <div style="background-image: url(../img/lugar2.jpg);"></div>
+                <div style="background-image: url(../img/lugar1.jpg);"></div>
             </div>
-
-            <!-- main Atropos container (required), add your custom class here -->
-            <div class="atropos placeThree">
-                <!-- scale container (required) -->
-                <div class="atropos-scale">
-                  <!-- rotate container (required) -->
-                    <div class="atropos-rotate">
-                        <!-- inner container (required) -->
-                        <div class="atropos-inner">
-                            <!-- put your custom content here -->
-                            <div class="place-container">
-                                <div class="place" >
-                                    <div class="place"><img src="../img/lugar3.jpeg" alt=""></div>
-                                </div>
-                                <!-- DIV emergente -->
-                                <div class="place2" >
-                                    <P class="title">Casa de Ana Frank</P>
-                                    <P class="text">
-                                        El lugar donde Ana Frank y su familia se escondieron de los nazis durante la Segunda 
-                                        Guerra Mundial. Ahora es un museo que presenta la historia del Holocausto y la vida de
-                                        Ana Frank.
-                                    </P>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="action-buttons">
+                <button class="down-button">
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+                <button class="up-button">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
             </div>
-
-            <!-- main Atropos container (required), add your custom class here -->
-            <div class="atropos placeFour">
-                <!-- scale container (required) -->
-                <div class="atropos-scale">
-                  <!-- rotate container (required) -->
-                    <div class="atropos-rotate">
-                        <!-- inner container (required) -->
-                        <div class="atropos-inner">
-                            <!-- put your custom content here -->
-                            <div class="place-container">
-                                <div class="place" >
-                                    <div class="place"><img src="../img/lugar4.jpg" alt=""></div>
-                                </div>
-                                <!-- DIV emergente -->
-                                <div class="place2" >
-                                    <P class="title">Barrio Rojo</P>
-                                    <P class="text">
-                                        Conocido por sus famosas vitrinas donde las trabajadoras sexuales realizan su 
-                                        trabajo, así como por sus cafés, bares y restaurantes. 
-                                    </P>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- main Atropos container (required), add your custom class here -->
-            <div class="atropos placeFive">
-                <!-- scale container (required) -->
-                <div class="atropos-scale">
-                  <!-- rotate container (required) -->
-                    <div class="atropos-rotate">
-                        <!-- inner container (required) -->
-                        <div class="atropos-inner">
-                            <!-- put your custom content here -->
-                            <div class="place-container">
-                                <div class="place" >
-                                    <div class="place"><img src="../img/lugar5.jpeg" alt=""></div>
-                                </div>
-                                <!-- DIV emergente -->
-                                <div class="place2" >
-                                    <P class="title">Canal Ring (Anillo de Canales)</P>
-                                    <P class="text">
-                                        Un Patrimonio de la Humanidad de la UNESCO, el Anillo de Canales de 
-                                        Ámsterdam es famoso por sus pintorescos canales, puentes históricos y hermosas 
-                                        casas del siglo XVII.
-                                    </P>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- main Atropos container (required), add your custom class here -->
-            <div class="atropos placeSix">
-                <!-- scale container (required) -->
-                <div class="atropos-scale">
-                  <!-- rotate container (required) -->
-                    <div class="atropos-rotate">
-                        <!-- inner container (required) -->
-                        <div class="atropos-inner">
-                            <!-- put your custom content here -->
-                            <div class="place-container">
-                                <div class="place" >
-                                    <div class="place"><img src="../img/lugar6.jpg" alt=""></div>
-                                </div>
-                                <!-- DIV emergente -->
-                                <div class="place2" >
-                                    <P class="title">Plaza Dam</P>
-                                    <P class="text">
-                                        El corazón de Ámsterdam, donde puedes encontrar el Palacio 
-                                        Real, el Monumento Nacional y la Iglesia Nueva.
-                                    </P>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- main Atropos container (required), add your custom class here -->
-            <div class="atropos placeSeven">
-                <!-- scale container (required) -->
-                <div class="atropos-scale">
-                  <!-- rotate container (required) -->
-                    <div class="atropos-rotate">
-                        <!-- inner container (required) -->
-                        <div class="atropos-inner">
-                            <!-- put your custom content here -->
-                            <div class="place-container">
-                                <div class="place" >
-                                    <div class="place"><img src="../img/lugar7.jpg" alt=""></div>
-                                </div>
-                                <!-- DIV emergente -->
-                                <div class="place2" >
-                                    <P class="title">Museo de Ámsterdam (Amsterdam Museum)</P>
-                                    <P class="text">
-                                        Un museo dedicado a la historia y la cultura de 
-                                        Ámsterdam, desde sus orígenes hasta el presente.
-                                    </P>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- main Atropos container (required), add your custom class here -->
-            <div class="atropos placeEight">
-                <!-- scale container (required) -->
-                <div class="atropos-scale">
-                  <!-- rotate container (required) -->
-                    <div class="atropos-rotate">
-                        <!-- inner container (required) -->
-                        <div class="atropos-inner">
-                            <!-- put your custom content here -->
-                            <div class="place-container">
-                                <div class="place" >
-                                    <div class="place"><img src="../img/lugar8.jpg" alt=""></div>
-                                </div>
-                                <!-- DIV emergente -->
-                                <div class="place2" >
-                                    <P class="title">Parque Vondelpark</P>
-                                    <P class="text">
-                                        Un hermoso parque urbano donde puedes relajarte, hacer un 
-                                        picnic, andar en bicicleta o simplemente pasear.
-                                    </P>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- main Atropos container (required), add your custom class here -->
-            <div class="atropos placeNine">
-                <!-- scale container (required) -->
-                <div class="atropos-scale">
-                  <!-- rotate container (required) -->
-                    <div class="atropos-rotate">
-                        <!-- inner container (required) -->
-                        <div class="atropos-inner">
-                            <!-- put your custom content here -->
-                            <div class="place-container">
-                                <div class="place" >
-                                    <div class="place"><img src="../img/lugar9.jpeg" alt=""></div>
-                                </div>
-                                <!-- DIV emergente -->
-                                <div class="place2" >
-                                    <P class="title">Casa de Rembrandt (Rembrandthuis)</P>
-                                    <P class="text">
-                                        La casa donde vivió y trabajó el famoso pintor holandés Rembrandt van 
-                                        Rijn. Ahora es un museo que presenta su vida y obra.
-                                    </P>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- main Atropos container (required), add your custom class here -->
-            <div class="atropos placeTen">
-                <!-- scale container (required) -->
-                <div class="atropos-scale">
-                  <!-- rotate container (required) -->
-                    <div class="atropos-rotate">
-                        <!-- inner container (required) -->
-                        <div class="atropos-inner">
-                            <!-- put your custom content here -->
-                            <div class="place-container">
-                                <div class="place">
-                                    <div class="place"><img src="../img/lugar10.jpg" alt=""></div>
-                                </div>
-                                <!-- DIV emergente -->
-                                <div class="place2">
-                                    <P class="title">Mercado de las Flores (Bloemenmarkt)</P>
-                                    <P class="text">
-                                        El único mercado de flores flotante del mundo, donde puedes encontrar una gran 
-                                        variedad de flores, plantas y bulbos de flores holandesas.
-                                    </P>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
     </div>
-    <script src="../node_modules/atropos/atropos.min.js"></script>
-    <script src="../js/atropos.js"></script>
-
+    
+    <script src="../js/tourist_places.js"></script>
 </body>
 </html>

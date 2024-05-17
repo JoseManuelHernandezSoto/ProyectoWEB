@@ -1,101 +1,82 @@
-.content{
-    margin-top: 5.5%;
-}
-
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: #fff;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper {
-  width: 240px;
-  height: 320px;
-}
-
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Esto asegura que la imagen cubra completamente el contenedor */
-}
-
+/* Estilos generales para el contenido */
 .content {
-    display: flex;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
+  display: flex; /* Utiliza flexbox para organizar el contenido */
+  position: fixed; /* Fija el contenido en la ventana */
+  top: 0; /* Alinea el contenido en la parte superior */
+  bottom: 0; /* Alinea el contenido en la parte inferior */
+  left: 0; /* Alinea el contenido en el lado izquierdo */
+  right: 0; /* Alinea el contenido en el lado derecho */
+  text-align: center; /* Centra el texto horizontalmente */
 }
 
+/* Estilos para el margen superior del contenido */
+.content {
+  margin-top: 5.5%; /* Añade un margen superior del 5.5% */
+}
+
+/* Estilos para el contenedor del slider */
+.swiper {
+  width: 240px; /* Establece el ancho del slider en 240px */
+  height: 320px; /* Establece la altura del slider en 320px */
+}
+
+/* Estilos para cada diapositiva del slider */
+.swiper-slide {
+  display: flex; /* Utiliza flexbox para centrar el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  border-radius: 18px; /* Añade bordes redondeados */
+  font-size: 22px; /* Establece el tamaño de fuente en 22px */
+  font-weight: bold; /* Establece el peso de la fuente en negrita */
+  color: #fff; /* Establece el color del texto en blanco */
+}
+
+/* Estilos para las imágenes dentro de las diapositivas del slider */
+.swiper-slide img {
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: 100%; /* Ajusta la altura de la imagen al 100% del contenedor */
+  object-fit: cover; /* Ajusta el tamaño de la imagen para que cubra completamente el contenedor */
+}
+
+/* Estilos para las cuatro cajas dentro del contenido */
 #right-top, #left-top, #right-bot, #left-bot {
-    flex: 1;
+  flex: 1; /* Cada caja ocupará la mitad del contenedor */
+  border: 1px solid black; /* Añade un borde negro de 1px */
+  box-sizing: border-box; /* Asegura que el tamaño de la caja incluya el borde */
 }
 
+/* Estilos para la caja superior derecha */
 #right-top {
-    background-color: rgba(255, 238, 0, 0.4);
+  background-color: rgba(194, 186, 76, 0.3); /* Establece el color de fondo con transparencia */
 }
 
+/* Estilos para la caja superior izquierda */
 #left-top {
-    background-color: rgba(255, 0, 0, 0.4);
+  background-color: rgba(121, 46, 46, 0.3); /* Establece el color de fondo con transparencia */
 }
 
+/* Estilos para la caja inferior derecha */
 #right-bot {
-    background-color: rgba(0, 0, 255, 0.4);
+  background-color: rgba(57, 57, 95, 0.3); /* Establece el color de fondo con transparencia */
 }
 
+/* Estilos para la caja inferior izquierda */
 #left-bot {
-    background-color: rgb(57, 211, 70, 0.4);
+  background-color: rgba(95, 188, 103, 0.3); /* Establece el color de fondo con transparencia */
 }
 
-.title{
- font-size: 45px;
- font-weight: bold;
- font-style: italic;
+/* Estilos para el título */
+.title {
+  font-size: 45px; /* Establece el tamaño de fuente en 45px */
+  font-weight: bold; /* Establece el peso de la fuente en negrita */
+  font-style: italic; /* Establece el estilo de fuente en cursiva */
 }
 
-.text{
-    margin-left: 1%;
- font-size: 20px;
+/* Estilos para el texto */
+.text {
+  margin-top: 20%; /* Añade un margen superior del 20% */
+  margin-left: 10%; /* Añade un margen izquierdo del 10% */
+  margin-right: 10%; /* Añade un margen derecho del 10% */
+  max-width: 80%; /* Establece el ancho máximo en 80% */
+  font-size: 25px; /* Establece el tamaño de fuente en 25px */
 }

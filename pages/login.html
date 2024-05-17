@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de registro</title>
+    <title>Administracion</title>
+    <link rel="icon" type="image/jpg" href="../img/favicon.jpg">
     <link rel="stylesheet" href="../css/basic_format.css">
     <link rel="stylesheet" href="../css/navBar.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
     <!-- Barra de navegacion -->
@@ -18,17 +20,39 @@
                 <li><a href="./tourist_places.html" class="nav-button">Lugares turisticos</a></li>
                 <li><a href="./typical_food.html" class="nav-button">Comida tipica</a></li>
                 <li><a href="./contact_number.html" class="nav-button">Contacto del creador</a></li>
-                <li><a href="" class="nav-button">Formulario de registro</a></li>
+                <li><a href="./form.php" class="nav-button">Formulario de registro</a></li>
                 <li class="nav-dropdown">
                     <a href="#" class="nav-button">Extras</a>
                     <ul class="dropdown-content">
-                      <li><a href="./videos.html">Videos</a></li>
-                        <li><a href="./login.html">Admin</a></li>
+                        <li><a href="./videos.html">Videos</a></li>
+                        <li><a href="">Admin</a></li>
                     </ul>
                 </li>
-                </ul>
-            </div>
-        </nav>
+            </ul>
+        </div>
+    </nav>
 
+    <div id="content">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form>
+              <div class="user-box">
+                <input type="text" name="" required="">
+                <label>Username</label>
+              </div>
+              <div class="user-box">
+                <input type="password" name="" required="">
+                <label>Password</label>
+              </div>
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Iniciar
+              </a>
+            </form>
+          </div>
+    </div>
 </body>
 </html>
