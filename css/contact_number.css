@@ -1,26 +1,128 @@
+@import url("https://use.fontawesome.com/releases/v6.5.1/css/all.css");
+
 .content-info {
     margin-top: 6%; /* Establece un margen superior del 6% con respecto al contenedor padre */
     height: 88vh; /* Establece la altura del elemento al 88% del viewport height */
-    text-align: center; /* Centra el texto horizontalmente */
-    align-items: center; /* Centra los elementos hijos verticalmente (aplicable si es un contenedor flex) */
+    display: flex;
+    align-items: center;
 }
 
-.imag {
-    height: 40%; /* Establece la altura del elemento al 40% de su contenedor padre */
-    border-radius: 20px; /* Aplica un borde redondeado de 20px */
-}
+.card {
+    margin-left: 20%;
+    position: relative;
+    height: 400px;
+    width: 290px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
 
-.title {
-    font-size: 60px; /* Tamaño de fuente de 60px */
-    font-weight: bolder; /* Establece el peso de la fuente a 'bolder' (más negrita que 'bold') */
-    font-style: italic; /* Establece el estilo de la fuente a cursiva */
-}
+  .orlando{
+    background:
+    linear-gradient(rgba(0, 0, 0, .2),
+      rgba(0, 0, 0, .2)),
+    url("../img/Orlando.jpg"); /* Cambia la ruta a la ubicación de tu imagen */
+  }
 
-.text {
-    font-size: 30px; /* Tamaño de fuente de 30px */
-}
-
-.phone {
-    font-size: 18px; /* Tamaño de fuente de 18px */
-    font-style: oblique; /* Establece el estilo de la fuente a oblicuo */
-}
+  .manuel{
+    background:
+    linear-gradient(rgba(0, 0, 0, .2),
+      rgba(0, 0, 0, .2)),
+    url("../img/Manuel.jpg"); /* Cambia la ruta a la ubicación de tu imagen */
+  }
+  
+  .front-face,
+  .back-face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform .7s cubic-bezier(.4, .2, .2, 1);
+  }
+  .contents {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    perspective: 100px;
+    transform:
+      translateY(-50%) translateZ(60px) scale(.94);
+  }
+  
+  .front p {
+    font-size: 28px;
+    margin: 0;
+  }
+  
+  .front span {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  
+  .front p.bottom-bar::after {
+    content: '';
+    display: block;
+    background: white;
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 150px;
+    margin-inline: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .back-face {
+    background:
+    linear-gradient(45deg, #0e0e0e 0%, #5a5a5a 100%);
+  }
+  
+  .back h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+  
+  .back span {
+    font-weight: 300;
+    font-size: 12px;
+  }
+  
+  .icons {
+    margin: 10px 0;
+  }
+  
+  .icons i {
+    height: 40px;
+    width: 40px;
+    background: white;
+    color: #042f4b;
+    font-size: 20px;
+    border-radius: 50%;
+    line-height: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .front-face {
+    transform: rotateY(0deg);
+  }
+  
+  .back-face {
+    transform: rotateY(180deg);
+  }
+  
+  .card:hover>.front-face {
+    transform: rotateY(-180deg);
+  }
+  
+  .card:hover>.back-face {
+    transform: rotateY(0deg);
+  }
