@@ -16,8 +16,8 @@
 
 /* Estilos para el contenedor del slider */
 .swiper {
-  width: 240px; /* Establece el ancho del slider en 240px */
-  height: 320px; /* Establece la altura del slider en 320px */
+  width: 200px; /* Establece el ancho del slider en 240px */
+  height: 280px; /* Establece la altura del slider en 320px */
 }
 
 /* Estilos para cada diapositiva del slider */
@@ -67,16 +67,16 @@
 
 /* Estilos para el título */
 .title {
-  font-size: 45px; /* Establece el tamaño de fuente en 45px */
+  font-size: 35px; /* Establece el tamaño de fuente en 45px */
   font-weight: bold; /* Establece el peso de la fuente en negrita */
   font-style: italic; /* Establece el estilo de fuente en cursiva */
 }
 
 /* Estilos para el texto */
 .text {
-  margin-top: 20%; /* Añade un margen superior del 20% */
+  margin-top: 10%; /* Añade un margen superior del 20% */
   margin-left: 10%; /* Añade un margen izquierdo del 10% */
   margin-right: 10%; /* Añade un margen derecho del 10% */
-  max-width: 80%; /* Establece el ancho máximo en 80% */
-  font-size: 25px; /* Establece el tamaño de fuente en 25px */
+  max-width: 90%; /* Establece el ancho máximo en 80% */
+  font-size: 20px; /* Establece el tamaño de fuente en 25px */
 }

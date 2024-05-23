@@ -44,15 +44,15 @@ body {
 .swiper-slide .title {
     font-size: 60px; /* Tamaño de fuente de 60px */
     font-weight: 300; /* Grosor de fuente */
-    background-color: rgb(0, 0, 0, 0.4); /* Color de fondo con transparencia */
-    color: white; /* Color de texto blanco */
+    background-color: rgba(255, 255, 255, 0.4); /* Color de fondo con transparencia */
+    color: rgb(0, 0, 0); /* Color de texto blanco */
 }
 
 /* Estilos para el subtítulo del carrusel */
 .swiper-slide .subtitle {
     font-size: 45px; /* Tamaño de fuente de 45px */
-    background-color: rgb(0, 0, 0, 0.4); /* Color de fondo con transparencia */
-    color: white; /* Color de texto blanco */
+    background-color: rgba(255, 255, 255, 0.4); /* Color de fondo con transparencia */
+    color: rgb(0, 0, 0); /* Color de texto blanco */
 }
 
 /* Estilos para el texto del carrusel */
