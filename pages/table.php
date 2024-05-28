@@ -7,6 +7,7 @@
     <link rel="icon" type="image/jpg" href="../img/favicon.jpg">
     <link rel="stylesheet" href="../css/navBar.css">
     <link rel="stylesheet" href="../css/navBar.css">
+    <link rel="stylesheet" href="../css/table.css">
 </head>
 <body>
      <!-- Barra de navegacion -->
@@ -33,22 +34,24 @@
       <!-- Lista de productos -->
 
     <?php
-    $conexion = mysqli_connect("127.0.0.1:3308","root","","form") or die("Problemas de coneccion");
-  //$conexion = mysqli_connect("127.0.0.1:3308","root","","biblioteca") or die("Problemas de coneccion");
-    $sql = "select * from prestamo";
+    $conexion = mysqli_connect("127.0.0.1:3308","root","","form") or die("Problemas de coneccion: " . mysqli_connect_error());
+    $sql = "select * from datos";
 
-    $respuesta = mysqli_query($conexion,$sql) or die("Error al conectar con la tabla 'Libro'".mysqli_error($conexion));
+    $respuesta = mysqli_query($conexion,$sql) or die("Error al conectar con la tabla 'datos'".mysqli_error($conexion));
 
     if (!$respuesta) {
       echo "sin registros";
     }else {
 
     ?>
-          <form class="hello" action="" method="">
-      <table border="1">
+    <div class="form">
+    <form>
+    <p class="title">Consultas de datos</p>
+      <table class="tabla" border="1">
         <thead>
-          <h2>Consultas de datos</h2>
+          
         <tr>
+            <th>No. Prestamo</th>
             <th>Nombre: </th>
             <th>Edad: </th>
             <th>Sexo: </th>
@@ -68,6 +71,7 @@
           ?>
 
           <tr>
+            <td><?php echo $datos['id_Reser']?></td>
             <td><?php echo $datos['nombre']?></td>
             <td><?php echo $datos['edad']?></td>
             <td><?php echo $datos['sexo']?></td>
@@ -79,7 +83,7 @@
             <td><?php echo $datos['tiposAlergias']?></td>
             <td><?php echo $datos['correo']?></td>
             
-            <td><?php echo "<a href='borrarPrestamo.php?ide=".$datos['id_prestamo']." ' onclick='return confirmar()'>BORRAR</a>";?></td>
+            <td><?php echo "<a href='delete.php?ide=".$datos['id_Reser']." ' onclick='return confirmar()'>BORRAR</a>";?></td>
           </tr>
           <?php
         }//While
@@ -89,8 +93,6 @@
         </tbody>
       </table>
     </form>
-
-    
-    
+    </div>
 </body>
 </html>
