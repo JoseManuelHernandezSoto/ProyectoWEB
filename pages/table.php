@@ -34,10 +34,17 @@
       <!-- Lista de productos -->
 
     <?php
-    $conexion = mysqli_connect("127.0.0.1:3308","root","","form") or die("Problemas de coneccion: " . mysqli_connect_error());
-    $sql = "select * from datos";
+    //Se crean las variables que se van a necesitar para realizar la coaneccin a la base de datos
+$servername = "localhost";
+$username = "id22167588_root";
+$password = "Azul-Rojo12";
+$dbname = "id22167588_registros";
 
-    $respuesta = mysqli_query($conexion,$sql) or die("Error al conectar con la tabla 'datos'".mysqli_error($conexion));
+
+    $conexion = mysqli_connect($servername,$username,$password,$dbname) or die("Problemas de coneccion: " . mysqli_connect_error());
+    $sql = "select * from registro";
+
+    $respuesta = mysqli_query($conexion,$sql) or die("Error al conectar con la tabla 'registro'".mysqli_error($conexion));
 
     if (!$respuesta) {
       echo "sin registros";
@@ -51,7 +58,7 @@
         <thead>
           
         <tr>
-            <th>No. Prestamo</th>
+            <th>No. Reservacion: </th>
             <th>Nombre: </th>
             <th>Edad: </th>
             <th>Sexo: </th>
@@ -76,7 +83,7 @@
             <td><?php echo $datos['edad']?></td>
             <td><?php echo $datos['sexo']?></td>
             <td><?php echo $datos['otro']?></td>
-            <td><?php echo $datos['celular1']?></td>
+            <td><?php echo $datos['celular']?></td>
             <td><?php echo $datos['celular2']?></td>
             <td><?php echo $datos['paquete']?></td>
             <td><?php echo $datos['alergias']?></td>
