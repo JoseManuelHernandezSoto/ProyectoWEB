@@ -123,21 +123,22 @@
 <input type="submit" name="registro">
 </form>
 </div>
-            
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/Principal.js"></script>
 
      <!-- Conexion a base de datos -->
 <?php
+//Se crean las variables que se van a necesitar para realizar la coaneccin a la base de datos
+$servername = "localhost";
+$username = "id22167588_root";
+$password = "Azul-Rojo12";
+$dbname = "id22167588_registros";
+
 if (isset($_POST['registro'])) {
     if(empty($_REQUEST['nombre'] || $_REQUEST['edad'] || $_REQUEST['sexo'] || $_REQUEST['celular'] || $_REQUEST['celular2'] || $_REQUEST['domicilio'] || $_REQUEST['paquete'] || $_REQUEST['alergias'] || $_REQUEST['tiposAlergias'] || $_REQUEST['correo'])) {
         echo '<script language="javascript">alert("Por favor rellenar todos los campos");</script>';
     } else {
-        $conexion = mysqli_connect("127.0.0.1:3308","root","","form") or die("Problemas de coneccion: " . mysqli_connect_error());
+        $conexion = mysqli_connect($servername,$username,$password,$dbname) or die("Problemas de coneccion: " . mysqli_connect_error());
 
         $nombre = strtoupper($_POST['nombre']);
         $edad  = $_POST['edad'];
@@ -151,7 +152,7 @@ if (isset($_POST['registro'])) {
         $tiposAlergias = strtoupper($_POST['tiposAlergias']);
         $correo = $_POST['correo'];
         
-        $sql = "INSERT INTO datos VALUES ('$nombre', '$edad', '$sexo','$otro','$celular','$celular2','$domicilio','$paquete','$alergias','$tiposAlergias','$correo')";
+        $sql = "INSERT INTO registro(nombre,edad,sexo,celular,celular2,domicilio,paquete,alergias,tipoAlergia,correo,otro) VALUES ('$nombre', '$edad', '$sexo','$celular','$celular2','$domicilio','$paquete','$alergias','$tiposAlergias','$correo','$otro')";
 
         if (mysqli_query($conexion,$sql)) {
             echo '<script language="javascript">alert("cliente registrado correctamente");</script>';
