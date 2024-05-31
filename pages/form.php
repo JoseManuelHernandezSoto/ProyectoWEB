@@ -135,7 +135,7 @@ $password = "Azul-Rojo12";
 $dbname = "id22167588_registros";
 
 if (isset($_POST['registro'])) {
-    if(empty($_REQUEST['nombre'] || $_REQUEST['edad'] || $_REQUEST['sexo'] || $_REQUEST['celular'] || $_REQUEST['celular2'] || $_REQUEST['domicilio'] || $_REQUEST['paquete'] || $_REQUEST['alergias'] || $_REQUEST['tiposAlergias'] || $_REQUEST['correo'])) {
+    if(empty($_REQUEST['nombre'] || $_REQUEST['edad'] || $_REQUEST['sexo'] || $_REQUEST['celular'] || $_REQUEST['celular2'] || $_REQUEST['domicilio'] || $_REQUEST['paquete'] || $_REQUEST['alergias'] || $_REQUEST['detallesAlergias'] || $_REQUEST['correo'])) {
         echo '<script language="javascript">alert("Por favor rellenar todos los campos");</script>';
     } else {
         $conexion = mysqli_connect($servername,$username,$password,$dbname) or die("Problemas de coneccion: " . mysqli_connect_error());
@@ -149,7 +149,7 @@ if (isset($_POST['registro'])) {
         $domicilio = strtoupper($_POST['domicilio']);
         $paquete = strtoupper($_POST['paquete']);
         $alergias = strtoupper($_POST['alergias']);
-        $tiposAlergias = strtoupper($_POST['tiposAlergias']);
+        $tiposAlergias = strtoupper($_POST['detallesAlergias']);
         $correo = $_POST['correo'];
         
         $sql = "INSERT INTO registro(nombre,edad,sexo,celular,celular2,domicilio,paquete,alergias,tipoAlergia,correo,otro) VALUES ('$nombre', '$edad', '$sexo','$celular','$celular2','$domicilio','$paquete','$alergias','$tiposAlergias','$correo','$otro')";

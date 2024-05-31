@@ -87,7 +87,7 @@ $dbname = "id22167588_registros";
             <td><?php echo $datos['celular2']?></td>
             <td><?php echo $datos['paquete']?></td>
             <td><?php echo $datos['alergias']?></td>
-            <td><?php echo $datos['tiposAlergias']?></td>
+            <td><?php echo $datos['tipoAlergia']?></td>
             <td><?php echo $datos['correo']?></td>
             
             <td><?php echo "<a href='delete.php?ide=".$datos['id_Reser']." ' onclick='return confirmar()'>BORRAR</a>";?></td>
